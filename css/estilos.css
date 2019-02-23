@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Reset de propriedades */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+
+}
+/* Mobile First - CSS do mobile */
+
+header {    
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 0 5px;
+    background-color: black;
+}
+header i{
+    color: white;
+    font-size: 2rem;
+    /* margin-left: 10px; */
+    /* margin-top: 5px; */
+}
+header img{
+    height: 55px;
+    margin-right: calc(50% - (123px / 2)); 
+    /* margin-right: calc(50% - 61.5px); */
+}
+header nav {
+    display: none;
+}
+
+main {
+    padding-top: 15px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+#sessao-principal {
+    padding-bottom: 15px;
+    border-bottom: 2px dotted grey;
+    /* 
+    padding: 0 0 15px 0;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: grey; 
+    */
+}
+
+#sessao-principal figure {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    font-size: 0.8rem;
+}
+
+#sessao-principal figure img {
+    height: 150px;
+    margin-left: -20px;
+}
+
+#sessao-principal article h1 {
+    width: 80%;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: orangered;
+}
+
+#sessao-principal article p {
+    width: 90%;
+    margin-top: 15px;
+}
+
+#sessao-principal article a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+#produtos {
+    margin-top: 15px;
+}
+
+#produtos article {
+    border: 1px solid grey;
+}
+
+#produtos article h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    /* line-height: 2rem; */
+    text-transform: uppercase;
+    background-color: orangered;
+    color: white;
+}
+
+#produtos article img {
+    float: left;
+    margin: 10px;
+}
+
+#produtos article p {
+    padding: 10px;
+}
+
+footer {
+    margin-top: 25px;
+    padding-left: 5px;
+    background-color: black;
+}
+
+footer img {
+    width: 30px;
+    margin-top: -15px;
+
+}
+
+footer p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+
+}
