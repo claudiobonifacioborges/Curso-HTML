@@ -21,22 +21,53 @@ body {
 header {    
     display: flex;
     justify-content: space-between;
+    position: relative;
     padding: 5px 5px 0 5px;
     background-color: black;
 }
 header i{
     color: white;
     font-size: 2rem;
-    /* margin-left: 10px; */
-    /* margin-top: 5px; */
 }
 header img{
     height: 55px;
-    margin-right: calc(50% - (123px / 2)); 
+    margin-right: calc(50% - (97px / 2)); 
     /* margin-right: calc(50% - 61.5px); */
 }
+
+header input {
+    display: none;
+}
+
+header input:checked ~ nav {
+    display: flex;
+}
+
 header nav {
     display: none;
+    /* display: flex; */
+    flex-direction: column;
+
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 0 10% 5px 10%;
+    background-color: black;
+
+}
+
+header nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: orangered;
+    border-radius: 3px;
 }
 
 main {
@@ -44,7 +75,6 @@ main {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 
 
 #sessao-principal {
